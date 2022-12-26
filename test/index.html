@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>WPoets Test</title>
+
+    <!-- Fontawesome online link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+    
+    <!-- Bootstrap Link -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--  <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style> -->
+
+    
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="get-in-touch">
+              <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Get in touch with us!</a>
+              <!-- <span><i class="fa fa-map-marker" aria-hidden="true"></i> Get in touch with us!</span> -->  
+            </div>
+            
+          </div>
+          <div class="col-lg-6">
+            <div class="top-right-nav">
+              <a href="#">Photo</a>
+              <a href="#">About Us</a>
+              <a href="#" class="last-child">Contact Us</a>
+              <select class="selectpicker" data-width="fit">
+                  <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                  <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <header class="header" id="header">
+       <nav class="navbar container">
+          <a href="./index.html" class="brand">Theme</a>
+          <div class="burger" id="burger">
+             <span class="burger-line"></span>
+             <span class="burger-line"></span>
+             <span class="burger-line"></span>
+          </div>
+          <span class="overlay"></span>
+          <div class="menu" id="menu">
+             <ul class="menu-inner">
+                <li class="menu-item"><a class="menu-link" href="#">Home</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">About</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">Service</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">Project</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">Support</a></li>
+             </ul>
+          </div>
+          <span><i class="fa fa-search search-toggle" aria-hidden="true"></i></span>
+          <div class="search-block">
+             <form class="search-form">
+                <span><i class="fa fa-arrow-left search-cancel" aria-hidden="true"></i></span>
+                <input type="search" name="search" class="search-input" placeholder="Search here...">
+             </form>
+          </div>
+       </nav>
+    </header>
+
+    
+    
+
+
+<main>
+  <!-- Slider section -->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      
+      <div class="carousel-item active">
+        <img src="./assets/images/slide1.png" width="100%" height="100%" fill="#777">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/slide2.png" width="100%" height="100%" fill="#777">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/slide1.png" width="100%" height="100%" fill="#777">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- End Slider section -->
+
+  <!-- Service section -->
+  <div id="service-section" class="service-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="icon-sec">
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+          </div>
+          <h4 class="fw-normal">Responsive Design</h4>
+          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="icon-sec">
+            <i class="fa fa-flask" aria-hidden="true"></i>
+          </div>
+          <h4 class="fw-normal">Unlimited Color</h4>
+          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="icon-sec">
+            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+          </div>
+          <h4 class="fw-normal">600+ Google FOnts</h4>
+          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="icon-sec">
+            <i class="fa fa-html5" aria-hidden="true"></i>
+          </div>
+          <h4 class="fw-normal">UI Kit Integrated</h4>
+          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Service section -->
+
+  <!-- feature section -->
+  <div class="feature-section">
+    <div class="container">
+      <div class="feature-head text-center">
+        <h3>Our Feature Projects</h3>
+        <hr>
+        <p>Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel.</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card shadow-sm my-2">
+            <div class="card-img">
+              <a href="#">
+                <img src="./assets/images/project1.jpg" class="img-responsive">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-caption my-2 px-2">
+                <span class="h5">Pellentesque et elit risus</span>
+              </div>
+              <div class="lead my-2 px-2">Some representative placeholder content for the second slide of the carousel.</div>
+              <div>
+                <a href="#" class="btn interior-btn">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i> Interior Design
+                </a>
+                <a href="#" class="btn read-more-btn right">
+                  Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow-sm my-2">
+            <div class="card-img">
+              <a href="#">
+                <img src="./assets/images/project1.jpg" class="img-responsive">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-caption my-2 px-2">
+                <span class="h5">Pellentesque et elit risus</span>
+              </div>
+              <div class="lead my-2 px-2">Some representative placeholder content for the second slide of the carousel.</div>
+              <div>
+                <a href="#" class="btn interior-btn">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i> Interior Design
+                </a>
+                <a href="#" class="btn read-more-btn right">
+                  Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow-sm my-2">
+            <div class="card-img">
+              <a href="#">
+                <img src="./assets/images/project1.jpg" class="img-responsive">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-caption my-2 px-2">
+                <span class="h5">Pellentesque et elit risus</span>
+              </div>
+              <div class="lead my-2 px-2">Some representative placeholder content for the second slide of the carousel.</div>
+              <div>
+                <a href="#" class="btn interior-btn">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i> Interior Design
+                </a>
+                <a href="#" class="btn read-more-btn right">
+                  Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End feature section -->
+
+  <!-- feature Details section -->
+  <div class="feature-detial-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="detial">
+            <h4 class="my-3">Clean and Modern design with amazing feature</h4>
+            <p class="my-3">Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel.</p>
+            <p class="my-3">Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel.</p>
+
+            <ul class="m-0 p-0">
+              <li> <i class="fa fa-check-square-o" aria-hidden="true"></i> Some representative placeholder</li>
+              <li> <i class="fa fa-check-square-o" aria-hidden="true"></i> Some representative placeholder</li>
+              <li> <i class="fa fa-check-square-o" aria-hidden="true"></i> Some representative placeholder</li>
+            </ul>
+            <div class="my-3">
+              <button><i class="fa fa-eye" aria-hidden="true"></i> Take a tour</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="image-container">
+            <img src="./assets/images/men.png" >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End feature Details section -->
+
+  <!-- Our Customer section -->
+  <div class="our-customer-section">
+    <div class="container">
+      <div class="customer-head text-center">
+        <h3>What our customer says</h3>
+        <hr>
+        <p>Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel.</p>
+      </div>
+      <div class="row customer-cards">
+        <div class="col-md-6 col-lg-6 d-flex align-items-start my-3">
+          <img src="./assets/images/customer1.jpg" class="">
+          <div class="mx-4">
+            <p>Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel.</p>
+            <h6 class="fw-bold mb-2">Anthony Welch</h6>
+            <p><strong class="bold">Marketing - </strong><span>Travel-inc</span></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 d-flex align-items-start my-3">
+          <img src="./assets/images/customer2.jpg" class="">
+          <div class="mx-4">
+            <p>Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel.</p>
+            <h6 class="fw-bold mb-2">Anthony Welch</h6>
+            <p><strong class="bold">Marketing - </strong><span>Travel-inc</span></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 d-flex align-items-start my-3">
+          <img src="./assets/images/customer3.jpg" class="">
+          <div class="mx-4">
+            <p>Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel.</p>
+            <h6 class="fw-bold mb-2">Anthony Welch</h6>
+            <p><strong class="bold">Marketing - </strong><span>Travel-inc</span></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 d-flex align-items-start my-3">
+          <img src="./assets/images/customer4.jpg" class="">
+          <div class="mx-4">
+            <p>Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel.</p>
+            <h6 class="fw-bold mb-2">Anthony Welch</h6>
+            <p><strong class="bold">Marketing - </strong><span>Travel-inc</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Our Customer section -->
+
+  <!-- Latest News section -->
+  <div class="latest-news-section">
+    <div class="container">
+      <div class="latest-news-head text-center">
+        <h3>Latest News</h3>
+        <hr>
+        <p>Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel.</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card shadow-sm my-2 latest-news-card">
+            <div class="card-img">
+              <a href="#">
+                <img src="./assets/images/project1.jpg" class="img-responsive">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-caption my-2 px-2">
+                <span class="">Pellentesque et elit risus content for the second slide</span>
+              </div>
+              <div class="lead my-2 px-2">Some representative placeholder content for the second slide of the carousel.</div>
+              <div class="news-result">
+                <hr>
+                <span><i class="fa fa-clock-o" aria-hidden="true"></i> 10 September 2022 </span>
+                <span><i class="fa fa-user " aria-hidden="true"></i> Super User</span>
+                <span><i class="fa fa-eye " aria-hidden="true"></i> 1793</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow-sm my-2 latest-news-card">
+            <div class="card-img">
+              <a href="#">
+                <img src="./assets/images/project1.jpg" class="img-responsive">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-caption my-2 px-2">
+                <span class="">Pellentesque et elit risus content for the second slide</span>
+              </div>
+              <div class="lead my-2 px-2">Some representative placeholder content for the second slide of the carousel.</div>
+              <div class="news-result">
+                <hr>
+                <span class="mr-2"><i class="fa fa-clock-o " aria-hidden="true"></i> 10 September 2022 </span>
+                <span class="mr-2"><i class="fa fa-user " aria-hidden="true"></i> Super User</span>
+                <span class="mr-2"><i class="fa fa-eye " aria-hidden="true"></i> 1793</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow-sm my-2 latest-news-card">
+            <div class="card-img">
+              <a href="#">
+                <img src="./assets/images/project1.jpg" class="img-responsive">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-caption my-2 px-2">
+                <span class="">Pellentesque et elit risus content for the second slide</span>
+              </div>
+              <div class="lead my-2 px-2">Some representative placeholder content for the second slide of the carousel.</div>
+              <div class="news-result">
+                <hr>
+                <span><i class="fa fa-clock-o " aria-hidden="true"></i> 10 September 2022 </span>
+                <span><i class="fa fa-user " aria-hidden="true"></i> Super User</span>
+                <span><i class="fa fa-eye " aria-hidden="true"></i> 1793</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End feature section -->
+
+  <!-- Latest News section -->
+  <div class="our-client-section">
+    <div class="container">
+      <div class="our-client-head text-center">
+        <h3>Our Awesome CLients</h3>
+        <hr>
+        <p>Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel. Some representative placeholder content for the second slide of the carousel.</p>
+      </div>
+     <!--  <div class="row">
+        <div class="col-sm-4">
+          <div class="card shadow-sm my-2 latest-news-card">
+            <div class="card-img">
+              <a href="#">
+                <img src="./assets/images/project1.jpg" class="img-responsive">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-caption my-2 px-2">
+                <span class="">Pellentesque et elit risus content for the second slide</span>
+              </div>
+              <div class="lead my-2 px-2">Some representative placeholder content for the second slide of the carousel.</div>
+              <div class="news-result">
+                <hr>
+                <span><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> 10 September 2022 </span>
+                <span><i class="fa fa-user mr-2" aria-hidden="true"></i> Super User</span>
+                <span><i class="fa fa-eye mr-2" aria-hidden="true"></i> 1793</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow-sm my-2 latest-news-card">
+            <div class="card-img">
+              <a href="#">
+                <img src="./assets/images/project1.jpg" class="img-responsive">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-caption my-2 px-2">
+                <span class="">Pellentesque et elit risus content for the second slide</span>
+              </div>
+              <div class="lead my-2 px-2">Some representative placeholder content for the second slide of the carousel.</div>
+              <div class="news-result">
+                <hr>
+                <span class="mr-2"><i class="fa fa-clock-o " aria-hidden="true"></i> 10 September 2022 </span>
+                <span class="mr-2"><i class="fa fa-user " aria-hidden="true"></i> Super User</span>
+                <span class="mr-2"><i class="fa fa-eye " aria-hidden="true"></i> 1793</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow-sm my-2 latest-news-card">
+            <div class="card-img">
+              <a href="#">
+                <img src="./assets/images/project1.jpg" class="img-responsive">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-caption my-2 px-2">
+                <span class="">Pellentesque et elit risus content for the second slide</span>
+              </div>
+              <div class="lead my-2 px-2">Some representative placeholder content for the second slide of the carousel.</div>
+              <div class="news-result">
+                <hr>
+                <span><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> 10 September 2022 </span>
+                <span><i class="fa fa-user mr-2" aria-hidden="true"></i> Super User</span>
+                <span><i class="fa fa-eye mr-2" aria-hidden="true"></i> 1793</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="logo-img-section">
+        <div class="logo-img">
+          <img src="./assets/images/company1.png">
+        </div>
+        <div class="logo-img">
+          <img src="./assets/images/company2.png">
+        </div>
+        <div class="logo-img">
+          <img src="./assets/images/company3.png">
+        </div>
+        <div class="logo-img">
+          <img src="./assets/images/company4.png">
+        </div>
+        <div class="logo-img">
+          <img src="./assets/images/company5.png">
+        </div>
+        <div class="logo-img">
+          <img src="./assets/images/company6.png">
+        </div>
+        <div class="logo-img">
+          <img src="./assets/images/company7.png">
+        </div>
+        <div class="logo-img">
+          <img src="./assets/images/company8.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End feature section -->
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row py-5 my-5">
+      <div class="col-md-6 col-lg-3 mb-3 px-5">
+        <h5>Get in Touch</h5>
+        <hr>
+        <ul class="p-0 get-in-touch">
+          <li><span class="gray-light address"><i class="fa fa-home mr-2" aria-hidden="true"></i>64158 Graham Place</span></li>
+          <li><a href="tel:0012 345 6789" class="gray-light contact" title=" 0012 345 6789"><i class="fa fa-phone mr-2" aria-hidden="true"></i>0012 345 6789</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-3 px-5">
+        <h5>Latest News</h5>
+        <hr>
+        <ul class="nav flex-column links">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 "><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 "><i class="fa fa-angle-right" aria-hidden="true"></i>Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 "><i class="fa fa-angle-right" aria-hidden="true"></i>Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 "><i class="fa fa-angle-right" aria-hidden="true"></i>FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 "><i class="fa fa-angle-right" aria-hidden="true"></i>About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-3 px-5 newsletter">
+        <h5>Newsletter</h5>
+        <hr>
+        <p>Stay tuned with our latest news!</p>
+        <div class="newsletterSign">
+          <form>
+            <div class="input-field">
+              <input type="text" name="name" placeholder="Name">
+            </div>
+
+            <div class="input-field">
+              <input type="email" name="email" placeholder="Email">
+            </div>
+
+            <button type="submit" class="subscribeBtn" name="submit">Subscribe</button>  
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-3 px-5">
+        <h5>Useful Links</h5>
+        <hr>
+        <ul class="nav flex-column links">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 "><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 "><i class="fa fa-angle-right" aria-hidden="true"></i>Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 "><i class="fa fa-angle-right" aria-hidden="true"></i>Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 "><i class="fa fa-angle-right" aria-hidden="true"></i>FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 "><i class="fa fa-angle-right" aria-hidden="true"></i>About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex flex-wrap justify-content-between align-items-center py-3 mx-5 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center copyRight">
+        <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex social-link">
+        <li class="ms-3">
+          <a class="text-muted" href="#">
+            <svg fill="#afb1a3" width="15px" height="15px" viewBox="0 0 32 32" id="Camada_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
+              <path class="st0" d="M12.6,16.1v11.6c0,0.2,0.1,0.3,0.3,0.3h4.6c0.2,0,0.3-0.1,0.3-0.3V15.9h3.4c0.2,0,0.3-0.1,0.3-0.3l0.3-3.6  c0-0.2-0.1-0.3-0.3-0.3h-3.7V9.2c0-0.6,0.5-1.1,1.2-1.1h2.6C21.9,8.1,22,8,22,7.8V4.3C22,4.1,21.9,4,21.7,4h-4.4  c-2.6,0-4.7,1.9-4.7,4.3v3.4h-2.3c-0.2,0-0.3,0.1-0.3,0.3v3.6c0,0.2,0.1,0.3,0.3,0.3h2.3V16.1z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="#">
+            <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.91 20.889c8.302 0 12.845-6.885 12.845-12.845 0-.193 0-.387-.009-.58A9.197 9.197 0 0 0 23 5.121a9.15 9.15 0 0 1-2.597.713 4.542 4.542 0 0 0 1.99-2.5 8.98 8.98 0 0 1-2.87 1.091A4.506 4.506 0 0 0 16.23 3a4.52 4.52 0 0 0-4.516 4.516c0 .352.044.696.114 1.03-3.75-.185-7.078-1.99-9.305-4.718a4.526 4.526 0 0 0 1.4 6.03 4.566 4.566 0 0 1-2.043-.563v.061A4.524 4.524 0 0 0 5.5 13.784a4.399 4.399 0 0 1-1.189.159c-.29 0-.572-.027-.845-.08a4.514 4.514 0 0 0 4.217 3.135 9.054 9.054 0 0 1-5.608 1.936A8.69 8.69 0 0 1 1 18.873a12.841 12.841 0 0 0 6.91 2.016Z" fill="#afb1a3"/>
+            </svg>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="#">
+            <svg fill="#afb1a3" width="15px" height="15px" viewBox="-2 -5.5 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-google-plus"><path d='M17.5 5V2.5h-1.25V5h-2.5v1.25h2.5v2.5h1.25v-2.5H20V5zM6.25 5v2.5h3.536A3.757 3.757 0 0 1 6.25 10 3.755 3.755 0 0 1 2.5 6.25 3.755 3.755 0 0 1 6.25 2.5c.896 0 1.759.321 2.429.905L10.32 1.52A6.194 6.194 0 0 0 6.25 0 6.257 6.257 0 0 0 0 6.25a6.257 6.257 0 0 0 6.25 6.25 6.257 6.257 0 0 0 6.25-6.25V5H6.25z'/></svg>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="#">
+            <svg fill="#afb1a3" width="15px" height="15px" viewBox="0 -0.5 25 25" xmlns="http://www.w3.org/2000/svg"><path d="m5.706 7.798v16.202h-5.395v-16.202zm.343-5.002c.001.029.002.063.002.098 0 .749-.318 1.423-.826 1.895l-.002.001c-.545.498-1.274.803-2.075.803-.049 0-.099-.001-.148-.003h.007-.033c-.041.002-.089.003-.137.003-.784 0-1.496-.306-2.025-.804l.001.001c-.504-.488-.816-1.17-.816-1.925 0-.024 0-.048.001-.073v.004c-.001-.021-.001-.045-.001-.069 0-.762.324-1.448.841-1.929l.002-.001c.544-.495 1.271-.799 2.068-.799.046 0 .091.001.137.003h-.006c.043-.002.092-.003.143-.003.785 0 1.5.303 2.034.798l-.002-.002c.515.497.835 1.193.835 1.964v.042-.002zm19.062 11.92v9.284h-5.378v-8.665c.005-.079.007-.171.007-.263 0-.896-.249-1.733-.682-2.447l.012.021c-.427-.596-1.117-.979-1.896-.979-.06 0-.12.002-.18.007h.008c-.027-.001-.058-.002-.089-.002-.62 0-1.19.213-1.641.57l.006-.004c-.453.367-.808.836-1.032 1.375l-.008.023c-.116.355-.182.763-.182 1.187 0 .048.001.096.003.144v-.007 9.042h-5.378q.033-6.523.033-10.578t-.016-4.839l-.016-.785h5.378v2.354h-.033c.214-.345.435-.644.678-.924l-.008.009c.281-.309.583-.588.908-.838l.016-.012c.404-.311.878-.555 1.392-.704l.03-.007c.538-.161 1.157-.254 1.797-.254h.079-.004c.071-.003.154-.005.237-.005 1.681 0 3.195.714 4.256 1.856l.003.004q1.702 1.856 1.702 5.436z"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+      
+  </body>
+</html>
